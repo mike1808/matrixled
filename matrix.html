@@ -1,0 +1,5 @@
+<div class="matrix">
+    <div ng-repeat="(i, row) in matrix track by $index">
+        <led ng-repeat="(j, value) in matrix[i] track by $index" value="matrix[i][j]"></led>
+    </div>
+</div>
